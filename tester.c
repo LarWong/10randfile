@@ -9,7 +9,7 @@ int main() {
       }
 
       printf("Writing numbers to file...\n\n");
-      int fd = open("stuff.txt", O_WRONLY | O_CREAT, 0777);
+      int fd = open("stuff.txt", O_WRONLY | O_CREAT, S_IRWXU);
       if (fd < 0) {
         printf("\topen error: %s\n", strerror(errno));
         return 0;

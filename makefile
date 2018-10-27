@@ -8,4 +8,4 @@ tester.o: tester.c rand.h
 run:
 	./tester
 clean:
-	rm -f ./tester  *.out *~ *.o *.gch
+	rm -f stuff.txt ./tester  *.out *~ *.o *.gch
